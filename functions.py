@@ -53,7 +53,33 @@ for i in range(0,15):
 print(f' {randomList}')
 print(f'the sum is {total} ')
 
+print('\nFuntions 6.')
 
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+nterms = 10
+fibo_list=[]
+print("Fibonacci sequence:")
+for i in range(nterms):
+    fibo_list.append(recur_fibo(i))
+print(fibo_list)
+
+
+print('\nFuntions 7.')
+my_list= [*range(5)]
+print(f' my list is {my_list}')
+
+new_list=[]
+second_power= lambda x : x**2 if x**2%2==0 else None
+
+for i in my_list:
+    if type(second_power(i))==int:
+        new_list.append(second_power(i))
+print(new_list)
 
 
 
